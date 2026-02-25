@@ -171,8 +171,8 @@ essRatioQuestion = 1.03
 
 # These basically define the squareness/roundness of the character shapes.
 # Default iosevka is around 200, while 160 gets us to Berkeley Mono territory.
-archDepth = 180
-smallArchDepth = 185
+archDepth = 210
+smallArchDepth = 215
 
 [namingOverride]
 copyright = "Copyright 2015-2026, Renzhi Li (aka. Belleve Invis, belleve@typeof.net). Build configuration (c) 2026, Yuri Turov"
