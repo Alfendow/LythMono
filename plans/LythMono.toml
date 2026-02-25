@@ -1,19 +1,20 @@
-family = "Lyth Mono"
+family = "Lyth"
 spacing = "normal"
 serifs = "sans"
 noCvSs = true
 exportGlyphNames = false
 buildTextureFeature = true
+noLigation = true
 
 [variants.design]
 one = "no-base"
 two = "straight-neck-serifless"
 three = "flat-top-serifless"
 four = "semi-open-serifless"
-five = "oblique-flat-serifless"
+five = "upright-arched-serifless"
 six = "open-contour"
 seven = "straight-serifless-crossbar"
-eight = "two-circles"
+eight = "crossing-asymmetric"
 nine = "open-contour"
 zero = "dotted"
 capital-a = "straight-serifless"
@@ -24,24 +25,24 @@ capital-e = "serifless"
 capital-f = "serifless"
 capital-g = "toothless-corner-serifless-hooked"
 capital-h = "serifless"
-capital-i = "serifed"
-capital-j = "serifless"
-capital-k = "symmetric-connected-serifless"
+capital-i = "short-serifed"
+capital-j = "serifed"
+capital-k = "straight-serifless"
 capital-l = "serifless"
 capital-m = "hanging-serifless"
 capital-n = "standard-serifless"
 capital-p = "closed-serifless"
-capital-q = "crossing"
-capital-r = "standing-serifless"
+capital-q = "horizontal-tailed"
+capital-r = "straight-serifless"
 capital-s = "serifless"
 capital-t = "serifless"
-capital-u = "toothless-rounded-serifless"
+capital-u = "toothless-corner-serifless"
 capital-v = "straight-serifless"
 capital-w = "straight-flat-top-serifless"
 capital-x = "straight-serifless"
 capital-y = "straight-serifless"
-capital-z = "straight-serifless"
-a = "double-storey-serifless"
+capital-z = "straight-serifless-with-horizontal-crossbar"
+a = "double-storey-hook-inward-serifed-serifed"
 b = "toothed-serifless"
 c = "serifless"
 d = "toothed-serifless"
@@ -49,18 +50,18 @@ e = "flat-crossbar"
 f = "flat-hook-serifless"
 g = "single-storey-serifless"
 h = "straight-serifless"
-i = "serifed"
-j = "flat-hook-serifed"
+i = "zshaped"
+j = "serifed"
 k = "symmetric-connected-serifless"
-l = "serifed-semi-tailed"
+l = "zshaped"
 m = "serifless"
 n = "straight-serifless"
 p = "eared-serifless"
 q = "straight-serifless"
 r = "serifless"
 s = "serifless"
-t = "flat-hook-short-neck2"
-u = "toothed-serifless"
+t = "bent-hook"
+u = "toothed-bottom-right-serifed"
 v = "straight-serifless"
 w = "straight-flat-top-serifless"
 x = "straight-serifless"
@@ -77,10 +78,10 @@ underscore = "high"
 caret = "medium"
 ascii-grave = "straight"
 ascii-single-quote = "straight"
-paren = "normal"
-brace = "curly"
+paren = "flat-arc"
+brace = "curly-flat-boundary"
 guillemet = "straight"
-number-sign = "slanted"
+number-sign = "upright"
 ampersand = "closed"
 at = "fourfold"
 dollar = "through"
@@ -99,12 +100,6 @@ lig-plus-chain = "without-notch"
 lig-double-arrow-bar = "without-notch"
 lig-single-arrow-bar = "without-notch"
 
-[ligations]
-inherits = "default-calt"
-enables = [
-    "eqeqeq", # Triple-line equality ligation
-    "exeqeq", # Triple-line inequality ligation
-]
 
 [weights.Light]
 shape = 320
@@ -176,8 +171,8 @@ essRatioQuestion = 1.03
 
 # These basically define the squareness/roundness of the character shapes.
 # Default iosevka is around 200, while 160 gets us to Berkeley Mono territory.
-archDepth = 185
-smallArchDepth = 190
+archDepth = 180
+smallArchDepth = 185
 
 [namingOverride]
 copyright = "Copyright 2015-2026, Renzhi Li (aka. Belleve Invis, belleve@typeof.net). Build configuration (c) 2026, Yuri Turov"
